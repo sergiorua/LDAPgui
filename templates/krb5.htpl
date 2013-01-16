@@ -1,0 +1,6 @@
+<%include file='top.htpl' />
+
+<script type="text/javascript" src="/include/js/addKrb5.js"></script>
+<script type="text/javascript" src="/include/js/krb5.js"></script>
+
+<%include file="bottom.htpl" />

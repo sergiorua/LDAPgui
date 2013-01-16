@@ -1,0 +1,47 @@
+<%include file='top.htpl' />
+
+
+<%
+
+import cherrypy
+
+from config import defaultAdminUser, defaultLDAPServer, defaultLDAPsuffix
+
+cookies = cherrypy.request.cookie
+cAdminUser = defaultAdminUser
+cServer = defaultLDAPServer
+cSuffix = defaultLDAPsuffix
+
+if cookies.has_key('adminUser'):
+
+	cAdminUser = cookies['adminUser'].value
+
+
+if cookies.has_key('server'):
+
+	cServer = cookies['server'].value
+
+	
+
+if cookies.has_key('suffix'):
+
+	cSuffix = cookies['suffix'].value
+
+
+
+%>
+
+
+
+<script type="text/javascript" src="/include/js/login.js"></script>
+
+<script type="text/javascript">
+
+var cServer="${cServer}";
+
+var cAdminUser="${cAdminUser}";
+
+var cSuffix="${cSuffix}";
+</script>
+
+<%include file="bottom.htpl" />

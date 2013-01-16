@@ -1,0 +1,1 @@
+showHelp=function(subject){var helpWindow=new Ext.Window({title:'Help',width:500,height:430,minWidth:300,minHeight:250,layout:'fit',plain:true,bodyStyle:'padding:5px;',buttonAlign:'center',buttons:[{text:'Close',handler:function(){helpWindow.destroy();}}]});helpWindow.show();}

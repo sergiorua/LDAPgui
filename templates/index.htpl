@@ -1,0 +1,18 @@
+<%include file='top.htpl' />
+
+<script type="text/javascript">
+
+var server = "${server}";
+var suffix = "${suffix}";
+</script>
+<script type="text/javascript" src="/include/js/common.js"></script>
+<script type="text/javascript" src="/include/js/help.js"></script>
+<script type="text/javascript" src="/include/js/settings.js"></script>
+<script type="text/javascript" src="/include/js/addUser.js"></script>
+<script type="text/javascript" src="/include/js/addGroup.js"></script>
+<script type="text/javascript" src="/include/js/Sudo.js"></script>
+<script type="text/javascript" src="/include/js/host.js"></script>
+<script type="text/javascript" src="/include/js/index.js"></script>
+
+
+<%include file="bottom.htpl" />

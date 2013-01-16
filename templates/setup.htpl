@@ -1,0 +1,9 @@
+<%include file='top.htpl' />
+
+<script type="text/javascript">
+var server = "${server}";
+var suffix = "${suffix}";
+</script>
+<script type="text/javascript" src="/include/js/setup.js"></script>
+
+<%include file="bottom.htpl" />
